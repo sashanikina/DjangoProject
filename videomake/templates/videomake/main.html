@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список</title>
+</head>
+<body>
+<h1>Список введенных строк</h1>
+{%for line in lines%}
+<p>{{line.pk}} {{line.name}} {{line.published|date:"d.m.Y H:i:s"}}</p>
+{%endfor%}
+</body>
+</html>
